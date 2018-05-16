@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0. pch">
+      <UniqueIdentifier>{2c8f840f-e144-4659-880c-8aa596b9cff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. System">
+      <UniqueIdentifier>{9382b1f9-f816-4e54-8276-3b4423cf72ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Scene">
+      <UniqueIdentifier>{903342db-c471-4b02-b641-bc668fc00fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. GameObject">
+      <UniqueIdentifier>{2e83e43a-8a9d-4726-bff2-6797b53c7e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. Component">
+      <UniqueIdentifier>{a4ad6617-d3e9-46f9-912e-2df37fec1839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Helper">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="6. Engine">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>0. pch</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsSystem.h">
+      <Filter>1. System</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerSystem.h">
+      <Filter>1. System</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowSystem.h">
+      <Filter>1. System</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>2. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>2. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>3. GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraObject.h">
+      <Filter>3. GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>4. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageComponent.h">
+      <Filter>4. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformComponent.h">
+      <Filter>4. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>5. Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix3x2.h">
+      <Filter>5. Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>6. Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Project.h">
+      <Filter>6. Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GraphicsSystem.cpp">
+      <Filter>1. System</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerSystem.cpp">
+      <Filter>1. System</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowSystem.cpp">
+      <Filter>1. System</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>2. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>2. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>3. GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraObject.cpp">
+      <Filter>3. GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>4. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageComponent.cpp">
+      <Filter>4. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformComponent.cpp">
+      <Filter>4. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>5. Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix3x2.cpp">
+      <Filter>5. Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>6. Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Project.cpp">
+      <Filter>6. Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>0. pch</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
