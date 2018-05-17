@@ -81,6 +81,7 @@ void SceneManager::SetUIScene(const tstring& _Name)
 
 	m_uiScene = (*it);
 	m_uiScene->SetIsActive(true);
+	m_uiScene->Initialize();
 }
 
 bool SceneManager::m_isCreate = false;

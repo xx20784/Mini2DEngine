@@ -2,7 +2,8 @@
 #include "Matrix3x2.h"
 
 Matrix3x2::Matrix3x2(Vector2 _dirX, Vector2 _dirY, Vector2 _o)
-	:dirX(_dirX), dirY(_dirY), Origin(_o) {}
+	:dirX(_dirX), dirY(_dirY), Origin(_o) 
+{}
 
 Matrix3x2::Matrix3x2(float _00, float _01, float _10, float _11, float _20, float _21)
 {
@@ -28,8 +29,8 @@ void Matrix3x2::Matrix3x2Inverse()
 {
 	float det = dirX.X * dirY.Y - dirX.Y * dirY.X;
 
-	dirY.Y /= det; dirX.Y /= -det;
-	dirY.X /= -det; dirX.X /= det;
+	dirY.Y /=  det; dirX.Y /= -det;
+	dirY.X /= -det; dirX.X /=  det;
 	Origin.X = (dirY.X * Origin.Y - dirY.Y * Origin.X) / det;
 	Origin.Y = -(dirX.Y * Origin.Y - dirX.Y * Origin.X) / det;
 }
@@ -48,7 +49,7 @@ void Matrix3x2::Matrix3x2Scaling(float _valX, float _valY)
 
 void Matrix3x2::Matrix3x2RotationAxis(float _axis)
 {
-	dirX.X = cos(_axis); dirX.Y = sin(_axis);
+	dirX.X =  cos(_axis); dirX.Y = sin(_axis);
 	dirY.X = -sin(_axis); dirY.Y = cos(_axis);
 	Origin.X = 0.0f;     Origin.Y = 0.0f;
 }
@@ -64,7 +65,7 @@ void Matrix3x2::Matrix3x2Translation(float _valX, float _valY)
 
 Matrix3x2 Matrix3x2::operator*(const Matrix3x2& _rhs) const
 {
-	return Matrix3x2(Vector2(dirX.X * _rhs.dirX.X + dirX.Y * _rhs.dirY.X, dirX.X * _rhs.dirX.Y + dirX.Y * _rhs.dirY.Y),
-		Vector2(dirY.X * _rhs.dirX.X + dirY.Y * _rhs.dirY.X, dirY.X * _rhs.dirX.Y + dirY.Y * _rhs.dirY.Y),
-		Vector2(Origin.X * _rhs.dirX.X + Origin.Y * _rhs.dirY.X + _rhs.Origin.X, Origin.X * _rhs.dirX.Y + Origin.Y * _rhs.dirY.Y + _rhs.Origin.Y));
+	return Matrix3x2(dirX.X * _rhs.dirX.X + dirX.Y * _rhs.dirY.X, dirX.X * _rhs.dirX.Y + dirX.Y * _rhs.dirY.Y,
+	                 dirY.X * _rhs.dirX.X + dirY.Y * _rhs.dirY.X, dirY.X * _rhs.dirX.Y + dirY.Y * _rhs.dirY.Y,
+		             Origin.X * _rhs.dirX.X + Origin.Y * _rhs.dirY.X + _rhs.Origin.X, Origin.X * _rhs.dirX.Y + Origin.Y * _rhs.dirY.Y + _rhs.Origin.Y);
 }

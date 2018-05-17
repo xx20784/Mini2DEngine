@@ -26,7 +26,5 @@ int WINAPI WinMain(HINSTANCE _hInst, HINSTANCE _hPreInst, LPSTR _lpCmdLine, int 
 	Engine engine(new TestProject());
 	int result = engine.MainLoop();
 
-	/*Git ¿¬µ¿ Test*/
-
 	return result;
 }

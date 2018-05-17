@@ -15,9 +15,9 @@ public:
 	virtual void Draw() override;
 
 	// 비례, 회전, 이동 설정.
-	void Scale(const Vector2& _scale);
+	void Scale(float _x, float _y);
 	void Rotate(float _axis);
-	void Translate(const Vector2& _pos);
+	void Translate(float _x, float _y);
 
 	// Get Method.
 	const Matrix3x2& GetWorldMatrix() const;

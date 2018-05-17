@@ -6,7 +6,6 @@
 void TransformComponent::Update()
 {
 	Matrix3x2 matParent = {};
-
 	// 부모 오브젝트가 있다면
 	if (m_owner->GetParent() != nullptr) {
 		// 부모 오브젝트의 세계 행렬을 구한다.
@@ -33,14 +32,16 @@ void TransformComponent::Draw()
 
 
 
-void TransformComponent::Translate(const Vector2& _pos)
+void TransformComponent::Translate(float _x, float _y)
 {
-	m_pos += _pos;
+	Vector2 temp = { _x, _y };
+	m_pos += temp;
 }
 
-void TransformComponent::Scale(const Vector2& _scale)
+void TransformComponent::Scale(float _x, float _y)
 {
-	m_scale = _scale;
+	Vector2 temp = { _x, _y };
+	m_scale = temp;
 }
 
 void TransformComponent::Rotate(float _axis)
