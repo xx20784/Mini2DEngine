@@ -1,2 +1,3 @@
 # Mini2DEngine
-Release x86
+Play Video : https://www.youtube.com/watch?v=1ONKjI1mVQY  
+Tool : C++, D2D
